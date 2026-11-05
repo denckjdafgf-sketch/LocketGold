@@ -1,14 +1,13 @@
 // ============================================================
 // Locket Remote Config Rewrite
 // Dùng cho: Loon / Quantumult X / Surge / Shadowrocket
-// cre dinhduyvinh09
 // ============================================================
 
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"] || "";
 var obj = JSON.parse($response.body);
 
 if (ua.includes("Locket")) {
-    obj.Attention = "Chúc mừng bạn! Vui lòng không bán hoặc chia sẻ cho người khác!";
+    obj.Attention = "Hi, I'am Dinh :>";
     obj.entries = obj.entries || {};
 
     // ============================================================
@@ -55,7 +54,7 @@ if (ua.includes("Locket")) {
                 {
                     title: "✨✨✨✨✨",
                     body: "💛💛💛💛💛💛💛💛💛💛",
-                    imageURL: "https://i.ibb.co/xkJMqKn/photo-2026-10-16-15-31-19.png"
+                    imageURL: "https://ibb.co/NgYyJB6z"
                 
                 }
             ],
@@ -615,12 +614,12 @@ if (ua.includes("Locket")) {
                 section: "🎨🎨🎨🎨🎨🎨",
                 items: [
                     {
-                        overlay_id: "caption:nca",
+                        overlay_id: "caption:vhd",
                         source: "remote",
                         caption: {
                             background: { colors: ["#B8E7FF", "#A8F5D0", "#DCCBFF"] },
                             max_lines: 1,
-                            text: "nguyencongan",
+                            text: "DinDin :)",
                             text_color: "#183153",
                             type: "static_content"
                         }
@@ -639,12 +638,12 @@ if (ua.includes("Locket")) {
                         }
                     },
                     {
-                        overlay_id: "caption:cu",
+                        overlay_id: "caption:gay",
                         source: "remote",
                         caption: {
                             background: { colors: ["#FFD6A5", "#FFF1A8", "#FFC4D6"] },
                             max_lines: 1,
-                            text: "Cu 🐎",
+                            text: "Gay 🎨",
                             text_color: "#633B24",
                             type: "static_content"
                         }
